@@ -1,0 +1,7 @@
+<ul>
+<% @users.each do |user| %>
+  <li><%= user.login %></li>
+  <li><%= user.public_repos %></li>
+  <li><%= user.followers %></li>
+<% end %>
+</ul>
