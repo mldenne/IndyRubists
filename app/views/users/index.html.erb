@@ -1,7 +1,8 @@
-<ul>
+
 <% @users.each do |user| %>
-  <li><%= user.login %></li>
-  <li><%= user.public_repos %></li>
-  <li><%= user.followers %></li>
+  <%= link_to user.name, user.html_url %>
+  <%= image_tag user.avatar_url %>
+  <%= user.created_at %>
+  <%= user.public_repos %>
+  <%= user.followers %>
 <% end %>
-</ul>

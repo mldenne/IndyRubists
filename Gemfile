@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem "octokit", "~> 4.0"
 gem "figaro"
 gem 'pry-rails'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
