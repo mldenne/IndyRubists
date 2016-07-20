@@ -6,9 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+
   </head>
 
   <body>
+    <h2>Indy Rubyists!</h2>
+    <h3>brought to you by the fine peeps at GitHub</h3>
+
+    <% @pages.times do |x| %>
+       <%= link_to "Page #{x + 1} | ", page: x + 1 %>
+    <% end %>
+
     <%= yield %>
+
+    <% @pages.times do |x| %>
+       <%= link_to "Page #{x + 1} | ", page: x + 1 %>
+    <% end %>
+
   </body>
 </html>
